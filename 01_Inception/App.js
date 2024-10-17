@@ -1,3 +1,5 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
 // const heading = React.createElement(
 //   "h1",
 //   {
@@ -7,22 +9,21 @@
 //   "Hello World from React !"
 // );
 
-const parent = React.createElement("div",{ id: "parent"}, [
-    React.createElement("div", { id: "child",},[
-      React.createElement("h1", {}, "Hi this is h1"),
-      React.createElement("h2", {}, "Hi this is h2"),
-    ]),                                                       // [] - use array for siblings element  
-    React.createElement("div", { id: "child",},[
-      React.createElement("h1", {}, "Hi this is h1"),
-      React.createElement("h2", {}, "Hi this is h2"),
-    ])
-  ]
-);
+const parent = React.createElement("div", { id: "parent" }, [
+  React.createElement("div", { id: "child" }, [
+    React.createElement("h1", {}, "This is Namaste React 👾"),
+    React.createElement("h2", {}, "Hi this is Lokesh 🤡 "),
+  ]), // [] - use array for siblings element
+  React.createElement("div", { id: "child" }, [
+    React.createElement("h1", {}, "Hi this is h1"),
+    React.createElement("h2", {}, "Hi this is h2"),
+  ]),
+]);
 
 // JSX
 
 console.log(parent); // object
-console.log(React.createElement)
+console.log(React.createElement);
 
 const root = ReactDOM.createRoot(document.querySelector(".root"));
 
