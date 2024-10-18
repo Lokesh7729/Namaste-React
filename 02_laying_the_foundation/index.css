@@ -1,0 +1,23 @@
+body {
+  background-color: #555;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#heading,
+.head {
+  color: rgb(200, 126, 200);
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 400;
+}
+.title {
+    color: white;
+  font-size: 4rem;
+  text-align: center;
+  /* font-weight: 400; */
+}
+.para{
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+  font-weight: 400;
+}
