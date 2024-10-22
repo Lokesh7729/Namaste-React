@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+.header {
+  /* height: 5rem; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  padding: 0 10rem;
+  margin: auto;
+  background-color: rgb(241, 189, 77);
+}
+
+.nav-items > ul {
+  display: flex;
+  list-style-type: none;
+  gap: 2rem;
+  color: white;
+  align-items: center;
+}
+.nav-items > ul > li {
+  padding: 10px;
+  margin: 10px;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: white;
+}
+.search {
+  width: 300px;
+  margin: auto;
+  border-radius: 30px;
+  border: 1px solid gray;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+.body {
+  min-width:80%;
+  margin: auto;
+}
+
+.res-card {
+  overflow: hidden;
+  height: 300px;
+  width: 274px;
+ 
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.res-card:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.res-card h3 {
+  margin-top: 10px;
+}
+.res-cont {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 1;
+  justify-content: center;
+  gap: 2rem;
+}
+.search {
+  padding: 10px;
+}
+.res-card img {
+  border-radius: 15px;
+  width: 100%; /* Ensures the image fits horizontally */
+  height: 50%; /* Ensures the image fits vertically */
+  object-fit: cover; /* Crops the image while maintaining its aspect ratio */
+  object-position: center;
+}
+.res-card h3 {
+  font-weight: 500;
+}
+.res-card h3,
+h4,
+p {
+  padding-left: 10px;
+}
+.res-card h4 {
+  font-weight: 400;
+  font-size: 15px;
+  color: rgb(111, 112, 115);
+}
+.fa-star {
+  color: green;
+}
