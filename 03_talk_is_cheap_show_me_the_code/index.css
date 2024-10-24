@@ -13,7 +13,7 @@
   max-width: 100%;
   padding: 0 10rem;
   margin: auto;
-  background-color: rgb(241, 189, 77);
+  background-color: rgb(233, 67, 67);
 }
 
 .nav-items > ul {
@@ -104,4 +104,22 @@ p {
 }
 .fa-star {
   color: green;
+}
+.filter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.filter-btn{
+  padding: 10px ;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
 }

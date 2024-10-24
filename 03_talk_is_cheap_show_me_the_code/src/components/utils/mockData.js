@@ -1,43 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-
-//------------------------
-// * Header
-// - logo
-// - nav Items
-// * Body
-// - search
-// - Restaurant Container
-// - restaurant card
-// * Footer
-// -copyright
-// - links
-// -address
-// contact
-
-const Header = () => {
-  return (
-    <div className="header">
-      <div className="logo-container">Lucky Food ❤️</div>
-      <div className="nav-items">
-        <ul>
-          <li>Home </li>
-          <li>Menu </li>
-          <li>About </li>
-          <li>Contact </li>
-          <button className="btn">Sign in</button>
-        </ul>
-      </div>
-    </div>
-  );
-};
-
 const resList = [
   {
     id: "1001",
     name: "KFC",
     cuisine: ["American", "Fast Food"],
-    rating: 4.2,
+    rating: 4.5,
     deliveryTime: "25-35 mins",
     imageUrl:
       "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/4/17/ca51121e-b178-44a4-a623-3c4f0bc02047_807635.JPG",
@@ -89,7 +55,8 @@ const resList = [
     cuisine: ["American", "Fast Food"],
     rating: 4.4,
     deliveryTime: "25-35 mins",
-    imageUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/9/18/14dbbc72-8985-4bd8-b270-8df71f8cd6a5_65268.jpg",
+    imageUrl:
+      "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/RX_THUMBNAIL/IMAGES/VENDOR/2024/9/18/14dbbc72-8985-4bd8-b270-8df71f8cd6a5_65268.jpg",
     address: "606, Malhar Mega Mall, AB Road, Indore",
   },
   {
@@ -98,7 +65,8 @@ const resList = [
     cuisine: ["Mexican", "Fast Food"],
     rating: 4.2,
     deliveryTime: "30-40 mins",
-    imageUrl: "https://tb-static.uber.com/prod/image-proc/processed_images/5881280d8257eaea64468779d3d7ede6/c9252e6c6cd289c588c3381bc77b1dfc.jpeg",
+    imageUrl:
+      "https://tb-static.uber.com/prod/image-proc/processed_images/5881280d8257eaea64468779d3d7ede6/c9252e6c6cd289c588c3381bc77b1dfc.jpeg",
     address: "707, C21 Mall, Vijay Nagar, Indore",
   },
   {
@@ -107,7 +75,8 @@ const resList = [
     cuisine: ["Indian", "Snacks"],
     rating: 4.6,
     deliveryTime: "20-30 mins",
-    imageUrl: "https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/1abb89624b491497c8cff182d95ac457",
+    imageUrl:
+      "https://media-assets.swiggy.com/swiggy/image/upload/f_auto,q_auto,fl_lossy/1abb89624b491497c8cff182d95ac457",
     address: "808, Sarafa Bazaar, Indore",
   },
   {
@@ -116,7 +85,8 @@ const resList = [
     cuisine: ["Desserts", "Ice Cream"],
     rating: 4.7,
     deliveryTime: "15-25 mins",
-    imageUrl: "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/85ccae4e3576f9330af102c46ca85395",
+    imageUrl:
+      "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/85ccae4e3576f9330af102c46ca85395",
     address: "909, Rajwada, Indore",
   },
   {
@@ -125,7 +95,8 @@ const resList = [
     cuisine: ["Beverages", "Snacks"],
     rating: 4.5,
     deliveryTime: "15-25 mins",
-    imageUrl: "https://5.imimg.com/data5/SELLER/Default/2022/12/PP/TE/MD/15997009/chai-point-paper-cup.jpg",
+    imageUrl:
+      "https://5.imimg.com/data5/SELLER/Default/2022/12/PP/TE/MD/15997009/chai-point-paper-cup.jpg",
     address: "1010, Khajrana Main Road, Indore",
   },
   {
@@ -134,7 +105,8 @@ const resList = [
     cuisine: ["Beverages", "Coffee"],
     rating: 4.6,
     deliveryTime: "20-30 mins",
-    imageUrl: "https://www.rd.com/wp-content/uploads/2019/01/starbucks-sign.jpg",
+    imageUrl:
+      "https://www.rd.com/wp-content/uploads/2019/01/starbucks-sign.jpg",
     address: "1111, Treasure Island Mall, MG Road, Indore",
   },
   {
@@ -143,7 +115,8 @@ const resList = [
     cuisine: ["Indian", "Barbecue"],
     rating: 4.8,
     deliveryTime: "40-50 mins",
-    imageUrl: "https://www.barbequenation.com/sites/default/files/2024-07/BBQ_Phone%20Pay%20Ad%20creative_Grill%20image_1440x1080px%20%281%29_0.png",
+    imageUrl:
+      "https://www.barbequenation.com/sites/default/files/2024-07/BBQ_Phone%20Pay%20Ad%20creative_Grill%20image_1440x1080px%20%281%29_0.png",
     address: "1212, Vijay Nagar Square, Indore",
   },
   {
@@ -152,7 +125,8 @@ const resList = [
     cuisine: ["Chinese", "Snacks"],
     rating: 4.2,
     deliveryTime: "25-35 mins",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiwoXUAbNVCz_aJk7dsfZieHPJDojdUHS9ww&s",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiwoXUAbNVCz_aJk7dsfZieHPJDojdUHS9ww&s",
     address: "1313, Bhawarkuan, Indore",
   },
   {
@@ -161,7 +135,8 @@ const resList = [
     cuisine: ["Indian", "Biryani"],
     rating: 4.4,
     deliveryTime: "30-40 mins",
-    imageUrl: "https://media-cdn.tripadvisor.com/media/photo-s/2d/bd/6d/cf/relish-guaranteed-leg.jpg",
+    imageUrl:
+      "https://media-cdn.tripadvisor.com/media/photo-s/2d/bd/6d/cf/relish-guaranteed-leg.jpg",
     address: "1414, Chappan Dukan, Indore",
   },
   {
@@ -170,54 +145,10 @@ const resList = [
     cuisine: ["Indian", "Biryani"],
     rating: 4.3,
     deliveryTime: "35-45 mins",
-    imageUrl: "https://b.zmtcdn.com/data/pictures/chains/2/91662/5c6f76bd1844f3814073926aadcb49ec.jpg",
+    imageUrl:
+      "https://b.zmtcdn.com/data/pictures/chains/2/91662/5c6f76bd1844f3814073926aadcb49ec.jpg",
     address: "1515, Tilak Nagar, Indore",
   },
 ];
 
-const RestaurantCard = (props) => {
-  const { resData } = props;
-  const { imageUrl, name, rating, deliveryTime, cuisine, address } =resData;
-  return (
-    <div className="res-card">
-      <img src={imageUrl} alt="" />
-
-      <h3>{name}</h3>
-      <p>
-        {" "}
-        <i className="fa-solid fa-star"></i> {rating} • {deliveryTime}
-      </p>
-      <h4>{cuisine.join(" , ")}</h4>
-      <h4>{address}</h4>
-
-      <p></p>
-    </div>
-  );
-};
-
-const Body = () => {
-  return (
-    <div className="body">
-      <div className="search">Search</div>
-      <div className="res-cont">
-        {
-          resList.map(restaurant => <RestaurantCard key={restaurant.id} resData={restaurant} />)
-        }
-        
-        
-      </div>
-    </div>
-  );
-};
-
-const AppLayout = () => {
-  return (
-    <div className="app">
-      <Header />
-      <Body />
-    </div>
-  );
-};
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
+export default resList;
