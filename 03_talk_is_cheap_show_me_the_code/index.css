@@ -92,9 +92,7 @@
   justify-content: center;
   gap: 2rem;
 }
-.search {
-  /* padding: 10px; */
-}
+
 .res-card img {
   border-radius: 15px;
   width: 100%; /* Ensures the image fits horizontally */
