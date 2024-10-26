@@ -1,19 +1,18 @@
+import { LOGO_URL } from "./utils/constants";
+
 const RestaurantCard = (props) => {
   const { resData } = props;
-  const { imageUrl, name, rating, deliveryTime, cuisine, address } = resData;
+  const { name, id, avgRating, sla , cloudinaryImageId, cuisines, areaName} = resData;
   return (
     <div className="res-card">
-      <img src={imageUrl} alt="" />
-
+      <img src={LOGO_URL+cloudinaryImageId} alt="" />
       <h3>{name}</h3>
       <p>
         {" "}
-        <i className="fa-solid fa-star"></i> {rating} • {deliveryTime}
+        <i className="fa-solid fa-star"></i> {avgRating} • {sla.deliveryTime + " mins"}
       </p>
-      <h4>{cuisine.join(" , ")}</h4>
-      <h4>{address}</h4>
-
-      <p></p>
+      <h4>{cuisines.join(" , ")}</h4>
+      <h4>{areaName}</h4>
     </div>
   );
 };
