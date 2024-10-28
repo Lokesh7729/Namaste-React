@@ -13,7 +13,7 @@
   max-width: 100%;
   padding: 0 10rem;
   margin: auto;
-  background-color: rgb(233, 67, 67);
+  background-color: rgb(200, 96, 221);
 }
 
 .nav-items > ul {
@@ -38,13 +38,14 @@
   align-items: center;
   justify-content: center;
   width: 300px;
-  margin: auto;
-  border-radius: 30px;
-  border: 1px solid gray;
+  /* margin: auto; */
+  border-radius: 20px;
+  border: 1px solid rgb(193, 184, 184);
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
-  padding-left: 10px;
   gap: 2rem;
+  padding: 2px;
+  padding-left: 12px;
 }
 .search input {
   width: 100%;
@@ -53,11 +54,12 @@
   font-size: 1rem;
   text-decoration: none;
   border: none;
+  padding-right: 10px;
 }
 
 .btn {
   width: 100px;
-  height: 40px;
+  height: 35px;
   border-radius: 15px;
   border: none;
   cursor: pointer;
@@ -95,9 +97,9 @@
 
 .res-card img {
   border-radius: 15px;
-  width: 100%; /* Ensures the image fits horizontally */
-  height: 50%; /*Ensures the image fits vertically */
-  object-fit: cover; /* Crops the image while maintaining its aspect ratio */
+  width: 100%; 
+  height: 50%; 
+  object-fit: cover;
   object-position: center;
 }
 .res-card h3 {
@@ -123,14 +125,14 @@ p {
 }
 
 .filter-btn {
-  background-color: rgb(16, 191, 16);
-  color: white;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  border-radius: 20px;
-  border: none;
+  background-color: white;
+
+  color: rgb(200, 96, 221);
+  padding:10px;
+  border-radius: 35px;
+  border: 2px solid rgb(200, 96, 221);
   cursor: pointer;
+  margin-left: 2rem;
 }
 
 .simmer-container {
@@ -144,12 +146,17 @@ p {
 }
 
 .shimmer-card {
-  /* margin-top: 5rem; */
   height: 350px;
   width: 274px;
   background-color: #f0f0f0;
   padding: 10px;
   border-radius: 15px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  /* display: flex; */
+}
+.search-btn{
+  background-color: rgb(200, 96, 221);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  border-radius: 30px;
 }
